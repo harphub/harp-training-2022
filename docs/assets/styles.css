@@ -1,0 +1,49 @@
+body {
+  background-image: url("./images/skybg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Comfortaa', cursive;
+  color: #aaa;
+}
+
+a {
+  color: #888;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+hr {
+  border-color: #aaa;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+}
+
+.dropdown-item {
+  color: #ccc;
+}
+
+.dropdown-divider {
+  border-color: #aaa;
+}
+
+.code-block {
+  background-color: #aaa;
+  color: #555;
+}
+
+code span.function {
+  color: #700;
+}
+
+code span.string {
+  color: #070;
+}
+
+.circle-from-square {
+  border-radius: 50%;
+}

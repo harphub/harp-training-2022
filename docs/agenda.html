@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>harp 2022</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark">
+    <a href="#" class="navbar-brand">
+      <img src="./assets/images/harp_logo_dark.svg" alt="harp logo" width="40" height="40">
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="navbarNavDropdown01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="./agenda.html" class="nav-link active">Agenda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lessons
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-nav" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./rintro.html">Introduction to R</a>
+            <a class="dropdown-item" href="./dflist.html">Data Frames and Lists</a>
+            <a class="dropdown-item" href="./harpread.html">Reading Data with harp</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./verifdet.html">Deterministic Verification</a>
+            <a class="dropdown-item" href="./verifens.html">Ensemble Verification</a>
+            <a class="dropdown-item" href="./verifspat.html">Spatial Verification</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./harpprod.html">harp in Production</a>
+            <a class="dropdown-item" href="./verifgrp.html">Grouped Verfication</a>
+            <a class="dropdown-item" href="./scrcard.html">Score Cards</a>
+            <a class="dropdown-item" href="./fcstplt.html">Plotting Forecasts</a>
+            <div class="dropdown-divider"></div>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="./data.html" class="nav-link">Data</a>
+        </li>
+        <li class="nav-item">
+          <a href="./help.html" class="nav-link">Help</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container pt-3">
+    <div class="col"> 
+      
+      <div class="row justify-content-center">
+        <img src="./assets/images/harp_logo_dark.svg" alt="harp logo" width="150" height="150">
+      </div>
+  
+      <div class="row justify-content-center">
+        <h1 class="display-3 landing-title">harp Training 2022</h1>
+      </div>
+    
+    </div>
+  </div>
+
+  <section id="agenda">
+    <div class="container pt-3">
+      <h1>Agenda</h1>
+      <hr>
+      <section id="day1">
+        <h3 class="pt-3">Day 1 : 16 February 2022</h3>
+        <h4 class="pt-2 mb-1">10:00 - 10:15 : Welcome and Introduction</h4>
+        <p>
+          Welcome to the course with pratical information and a brief introudction to 
+          your instructors. 
+        </p>
+        <h4 class="pt-2 mb-1">10:15 - 11:00 : An Introduction to R [Andrew]</h4>
+        <p>
+          You will learn some of the basics of working in R, including common data types 
+          and classes, installing and attaching packages, vectors and arrays and basic 
+          math operations. 
+        </p>
+        <h4 class="pt-2 mb-3">11:00 - 11:15 : Break</h4>
+        <h4 class="pt-2 mb-1">11:15 - 12:00 : Data Frames and Lists [Andrew]</h4>
+        <p>
+          You will be introduced to data frames and lists - two of the most useful classes 
+          for storing data in R. harp makes extensive use of both data frames and lists, so 
+          this lesson serves to provide a foundation for working with harp. You will be shown 
+          how to manipulate data in data frames and introduced to the concept of tidy data. 
+        </p>
+        <h4 class="pt-2 mb-3">12:00 - 13:00 : Lunch</h4>
+        <h4 class="pt-2 mb-1">13:00 - 13:45 : Troubleshooting harp Installation</h4>
+        <p>
+          If you've had any problems installing harp, this session will give you an 
+          opportunity to get help from your instructors to install harp successfully.
+        </p>
+        <h4 class="pt-2 mb-3">13:45 - 14:00 : Break</h4>
+        <h4 class="pt-2 mb-1">14:00 - 15:00 : Reading an Transforming Forecast and
+          Observations Data with harp [Andrew]</h4>
+        <p>
+          You will be introduced to harp's main functions for reading external data:
+          <ul>
+            <li><code>read_grid()</code></li>
+            <li><code>read_forecast()</code></li>
+            <li><code>read_obs_file()</code></li>
+            <li><code>read_obs()</code></li>
+            <li><code>read_analysis()</code></li>
+          </ul>
+          You will be shown how to use these functions to transform gridded 
+          data to point data, other grids or vertical cross sections and how to write 
+          point forecast and observations data to harp's <code>SQLite</code> format 
+          that enables fast access to the data.
+        </p>
+      </section>
+
+      <hr>
+
+      <section id="day2">
+        <h3 class="pt-3">Day 2 : 17 February 2022</h3>
+        <h4 class="pt-2 mb-1">10:00 - 11:00 : Point Verification : Deterministic [Andrew]</h4>
+        <p>
+          You will be introcuded to the harp point verification workflow,  
+          read > join > verify > plot, for deterministic forecasts and the functions 
+          needed to follow this workflow:
+          <ul>
+            <li><code>read_point_forecast()</code></li>
+            <li><code>read_point_obs()</code></li>
+            <li><code>join_to_fcst()</code></li>
+            <li><code>det_verify()</code></li>
+            <li><code>plot_point_verif()</code></li>
+          </ul> 
+        </p>
+        <h4 class="pt-2 mb-3">11:00 - 11:15 : Break</h4>
+        <h4 class="pt-2 mb-1">11:15 - 12:00 : Point Verification : Ensembles [Andrew]</h4>
+        <p>
+          We will extend what we learned in the previous lesson to apply the same workflow 
+          to ensemble forecasts. You will also learn how to deal with lagged ensembles, and 
+          if time allows, multimodel ensembles. You will be introduced to the main 
+          ensemble verification function and functions for producing specific scores:
+          <ul>
+            <li><code>ens_verify()</code></li>
+            <li><code>ens_spread_and_skill()</code></li>
+            <li><code>ens_crps()</code></li>
+            <li><code>ens_rank_histogram()</code></li>
+            <li><code>ens_brier()</code></li>
+            <li><code>ens_reliability()</code></li>
+            <li><code>ens_roc()</code></li>
+            <li><code>ens_value()</code></li>
+          </ul>
+        </p>
+        <h4 class="pt-2 mb-3">12:00 - 13:00 : Lunch</h4>
+        <h4 class="pt-2 mb-1">13:00 - 13:45 : harpSpatial 1 [Alex]</h4>
+        <p>
+          You will be introduced to the harpSpatial package, and shown how to run 
+          spatial verifcation in harp using the <code>verify_spatial()</code> 
+          function.
+        </p>
+        <h4 class="pt-2 mb-3">13:45 - 14:00 : Break</h4>
+        <h4 class="pt-2 mb-1">14:00 - 15:00 : harpSpatial 2 [Alex]</h4>
+        <p>
+          We will continue to explore the harpSpatial package and how to plot 
+          spatial verification scores. 
+        </p>
+      </section>
+
+      <hr>
+
+      <section id="day3">
+        <h3 class="pt-3">Day 3 : 18 February 2022</h3>
+        <h4 class="pt-2 mb-1">10:00 - 10:45 : harp in a Production Environment [Mikko]</h4>
+        <p>
+          You will be shown how MetCoOp has implemented harp into their production chains 
+          to run operationally. You will also be shown how MetCoOp have set up a 
+          <em>shinyserver</em> to share verfication resuts internally. 
+        </p>
+        <h4 class="pt-2 mb-3">10:45 - 11:00 : Break</h4>
+        <h4 class="pt-2 mb-1">11:00 - 12:00 : Point Verification by Groups [Andrew]</h4>
+        <p>
+          You will be introcuded to the <code>groupings</code> argument to harp's point 
+          verification functions. This enables you to group data together and get 
+          verification scores for each group. This will include grouping by vertical 
+          level to get scores for vertical profiles, grouping by valid time, grouping 
+          by forecast cycle and by groups of weather stations.
+        </p>
+        <h4 class="pt-2 mb-3">12:00 - 13:00 : Lunch</h4>
+        <h4 class="pt-2 mb-1">13:00 - 13:45 : Statistical Significance and Score
+          Cards [Andrew]</h4>
+        <p>
+          You will be shown how to compute the statistical signficance of verification 
+          scores using bootstrapping, how to take account of serial correlations in the 
+          data and how to plot the results on score cards.
+        </p>
+        <h4 class="pt-2 mb-3">13:45 - 14:00 : Break</h4>
+        <h4 class="pt-2 mb-1">14:00 - 15:00 : Plotting Forecast Data [Andrew]</h4>
+        <p>
+          You will be shown some of harp's methods for plotting forecast data, as well as 
+          getting some tips on how use the 
+          <a href="https://ggplot2.tidyverse.org/">ggplot2</a> package to make 
+          beautiful charts tailored to your own needs. 
+        </p>
+        <h4 class="pt-2 mb-1">15:00 - 15:15 : Introducing harp Live Coding Sessions [Andrew]</h4>
+        <p>
+          In the weeks after the course we will run some live coding sessions where you 
+          can learn about the workflows we use in the real world, with real data with 
+          harp. You will have the opportunity to see how to incorporate harp functions 
+          into reusable scripts, how to build your own package that makes use of harp 
+          functions, and how to build functions that harp can use to read data in any 
+          format. We will also go through how to make automated reports and some much 
+          more advanced plotting techniques.
+        </p>
+      </section>
+
+      <hr>
+
+    </div>
+
+  </section>
+  
+  
+  
+</body>
+</html>

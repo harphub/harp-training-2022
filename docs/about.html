@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>harp 2022</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark">
+    <a href="#" class="navbar-brand">
+      <img src="./assets/images/harp_logo_dark.svg" alt="harp logo" width="40" height="40">
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="navbarNavDropdown01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link active">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="./agenda.html" class="nav-link">Agenda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lessons
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-nav" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./rintro.html">Introduction to R</a>
+            <a class="dropdown-item" href="./dflist.html">Data Frames and Lists</a>
+            <a class="dropdown-item" href="./harpread.html">Reading Data with harp</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./verifdet.html">Deterministic Verification</a>
+            <a class="dropdown-item" href="./verifens.html">Ensemble Verification</a>
+            <a class="dropdown-item" href="./verifspat.html">Spatial Verification</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./harpprod.html">harp in Production</a>
+            <a class="dropdown-item" href="./verifgrp.html">Grouped Verfication</a>
+            <a class="dropdown-item" href="./scrcard.html">Score Cards</a>
+            <a class="dropdown-item" href="./fcstplt.html">Plotting Forecasts</a>
+            <div class="dropdown-divider"></div>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="./data.html" class="nav-link">Data</a>
+        </li>
+        <li class="nav-item">
+          <a href="./help.html" class="nav-link">Help</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container pt-3">
+    <div class="col"> 
+      
+      <div class="row justify-content-center">
+        <img src="./assets/images/harp_logo_dark.svg" alt="harp logo" width="150" height="150">
+      </div>
+  
+      <div class="row justify-content-center">
+        <h1 class="display-3 landing-title">harp Training 2022</h1>
+      </div>
+    
+    </div>
+  </div>
+
+  <section id="intro">
+    <div class="container mt-5">
+      <h2>About the Training</h2>
+      <p>
+        Welcome to the harp Training course for 2022. harp is a set of R packages developed
+        within the ACCORD consortium for analysis and verifcation of numerical weather 
+        prediction (NWP) data. The course will take you from a brief introduction to R 
+        through how to read in NWP data, harp data structures, point verification for both
+        deterministic and ensemble forecasts, spatial verificaiton of ensemble forecasts, 
+        statistical significance of verification scores and plotting forecast data. 
+      </p>
+
+      <p>
+        As you know the course is taking place online, instead of at FMI in Helsinki as 
+        originally planned, as a result of travel restrictions arising from the COVID-19 
+        situation. The link to the bluejeans event is available on the 
+        <a href="https://opensource.umr-cnrm.fr/projects/accord/wiki/Harp_training_course_2022">
+          ACCORD MQA wiki
+        </a>. 
+        We will do our best to make the training the training as interesting and engaging 
+        as we can. Each class will be 45 minutes to 1 hour and will mostly go through
+        the functions necessary to perform each task. Questions should be asked via the 
+        chat function in bluejeans.
+      </p>
+
+      <p>
+        After the course we will continue to offer training on a weekly(ish) basis where you
+        can watch one of the instructors go through the workflows required to undertake 
+        specific analyses using real data. These sessions will include going through the 
+        verification of some ensemble forecasts from start to finish, a case study of an 
+        extreme weather event, how to write functions that harp can use to ingest local data
+        formats, how to build a package to adapt harp for local use, advanced plotting and more. 
+      </p>
+    </div>
+  </section>
+
+  <section id="prereqs">
+    <div class="container mt-5">
+      <h2>Prerequisites</h2>
+      <p>
+        Before attending the course you should have an installation of 
+        <a href="https://www.r-project.org/">R</a>. You will also need a few system
+        libraries:
+        <ul>
+          <li>proj or proj4 [<code>libproj-dev</code>]</li>
+          <li>eccodes [<code>libeccodes-dev</code>]</li>
+          <li>netcdf [<code>libnetcdf-dev</code>]</li>
+        </ul>
+        You will then need to install harp. harp is hosted on 
+        <a href="https://github.com/harphub">Github</a> and can be installed using the 
+        <code>remotes</code> package in R. You will also need to install the <code>Rgrib2</code>
+        and <code>ncdf4</code> packages to be able to read grib and NetCDF files. 
+      </p>
+      <pre class="code-block mt-2">
+         <code>
+          > <span class="function">install.packages</span>(<span class="string">"remotes"</span>)
+          > <span class="function">library</span>(remotes)
+          > <span class="function">install_github</span>(<span class="string">"harphub/harp"</span>)
+          > <span class="function">install_github</span>(<span class="string">"harphub/Rgrib2"</span>)
+          > <span class="function">install.packages</span>(<span class="string">"ncdf4"</span>)
+        </code>
+      </pre>
+      <p>
+        If you run into any problems, especially with system libraries, try consulting the 
+        <a href="https://harphub.github.io/harp/">harp installation instructions</a>. You 
+        may also find it useful to have your own account on <a href="https://github.com/">Github</a>, 
+        along with a Github PAT (Personal Access Token) - this can become especially
+        important if you have problems installing harp and exceed your hourly download limit
+        from Github. The online book <a href="https://happygitwithr.com/">Happy Git with R</a> 
+        includes a very helpful section describing 
+        <a href="https://happygitwithr.com/https-pat.html">
+          how to setup and install a Github PAT.
+        </a> 
+      </p>
+      <p>
+        For most of the lessons, the instructors will be using the 
+        <a href="https://www.rstudio.com/products/rstudio/">RStdudio IDE</a>. RStudio 
+        provides an excellent environment in which to develop R projects, and has a lot
+        of features that will help you along the way. We reccomend that you also follow
+        along with the lessons using RStudio.
+      </p>
+      <p>
+        If you do not have access to R or RStudio, you could make use of 
+        <a href="https://www.rstudio.com/products/cloud/">RStudio Cloud</a>. This will 
+        provide you with most of the tools you need to follow the course. The only 
+        drawbacks are that you won't be able to work with grib files, and the available RAM
+        on the free tier is limited to 1Gb. 
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="instructors">
+    <div class="container mt-5">
+      <h2>Meet your Instructors</h2>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="row justify-content-center">
+            <img class="circle-from-square mt-2 mb-3" src="./assets/images/andrew.png" alt="" width="200">
+          </div>
+          <h4>Andrew Singleton</h4>  
+          <p>
+            Andrew is the main developer for harp and will be your lead instructor for 
+            the course. He is based at the Norwegian Meteorogical Institute and started 
+            contributing to harp in 2014. He has been responsible for its development 
+            from a "black-box" into a set of packages that enable interactive analysis of 
+            NWP data. He is an experienced R programmer and is keen to make harp a user
+            friendly experience. He also works on improving the understanding and 
+            usabilty of ensemble forecasts through modern data visualization techniques.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <div class="row justify-content-center">
+            <img class="circle-from-square mt-2 mb-3" src="./assets/images/alex.jpeg" alt="" width="200">
+          </div>
+          <h4>Alex Deckmyn</h4>
+          <p>
+            Alex is the Godfather of harp. He instigated the idea following discussions 
+            at a HIRLAM / ALADIN all staff workshop about the lack a common 
+            tool for the verification of ensemble forecasts and spatial verification of 
+            high resolution forecasts. He is based at the Royal Meteorogical Institute of 
+            Belgium and has vast experience as an R programmer. He is the author of the 
+            meteogrid and Rgrib2 packages that harp is built around as well as the author and 
+            maintainer of the harpSpatial package. 
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <div class="row justify-content-center">
+            <img class="circle-from-square mt-2 mb-3" src="./assets/images/anonymous-user.png" alt="" width="200">
+          </div>
+          <h4>Mikko Partio</h4>
+          <p>
+            Mikko is based at the Finnish Meteorogical Institute (FMI) and has been 
+            responsible for implemtenting harp operationally for MetCoOp. He has 
+            experience of setting up the necessary environments to run harp 
+            efficeiently and to share the results via harp's web app.  
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <div class="row justify-content-center">
+            <img class="circle-from-square mt-2 mb-3" src="./assets/images/anonymous-user.png" alt="" width="200">
+          </div>
+          <h4>Carl Fortelius</h4>
+          <p>
+            Carl is the Area Leader for Model Quality Assurance (MQA) for the ACCORD
+            consortium. He works at FMI and oversees the development of harp as part 
+            of his role as Area Leader for MQA. Carl is taking care of the 
+            administration of the harp Training Course and will be able 
+            to answer any questions you have about accessing the course via bluejeans.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+  
+</body>
+</html>
