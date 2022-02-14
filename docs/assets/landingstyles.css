@@ -8,6 +8,12 @@ body {
 
 .landing-title {
   color: #ccc;
+  font-size: 6rem;
+}
+
+.landing-logo {
+  width: 150px;
+  height: 150px;
 }
 
 .dropdown-menu {
@@ -34,4 +40,36 @@ body {
   border-color: #5b7894;
   border-radius: 10%;
   transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+  .landing-title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-title {
+    font-size: 4rem;
+  }
+  .landing-logo {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-title {
+    font-size: 3rem;
+  }
+  .landing-logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing-title {
+    font-size: 2rem;
+  }
 }

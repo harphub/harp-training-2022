@@ -36,6 +36,15 @@ code {
   border-color: #aaa;
 }
 
+.page-title {
+  font-size: 3.5rem;
+}
+
+.page-logo {
+  width: 150px;
+  height: 150px;
+}
+
 .code-block {
   background-color: #aaa;
   color: #555;
@@ -51,4 +60,79 @@ code span.string {
 
 .circle-from-square {
   border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .page-title {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+  .page-logo {
+    width: 125px;
+    height: 125px;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.65rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.25rem;
+  }
+  .page-logo {
+    width: 100px;
+    height: 100px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
 }
