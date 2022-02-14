@@ -19,6 +19,11 @@ hr {
   border-color: #aaa;
 }
 
+code {
+  color: #990;
+  font-size: 1.15em;
+}
+
 .dropdown-menu {
   background-color: transparent;
 }
