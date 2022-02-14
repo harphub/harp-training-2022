@@ -21,3 +21,17 @@ body {
 .dropdown-divider {
   border-color: #aaa;
 }
+
+.custom-btn-class {
+  background-color: #000055;
+  border-color: #000045;
+  border-radius: 10%;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.custom-btn-class:hover {
+  background-color: #425c75;
+  border-color: #5b7894;
+  border-radius: 10%;
+  transform: scale(1.05);
+}
