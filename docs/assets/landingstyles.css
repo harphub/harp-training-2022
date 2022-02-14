@@ -9,6 +9,7 @@ body {
 .landing-title {
   color: #ccc;
   font-size: 6rem;
+  text-align: center;
 }
 
 .landing-logo {
