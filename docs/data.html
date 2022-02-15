@@ -79,7 +79,25 @@
 
   <section id="intro">
     <div class="container mt-5">
-      <h2>Links to data will be added here</h2>
+      <h2>Data</h2>
+      <p>
+        The data you need for the course can be downloaded from 
+        <a href="https://drive.google.com/file/d/1NoV5Ll3FVjWg3SIlpBomZ6KOWS8ipz1v/view?usp=sharing">here</a>. 
+        Google will probably give you a warning about possible viruses, but that is just because the 
+        file is too large to check. 
+      </p>
+      <p>
+        Once you have the data, either start a new project in <em>RStudio</em> 
+        or create a new directory for you project from the terminal. Copy the 
+        <em>.tgz</em> file into that directory and extract it with
+        <pre class="code-block mt-2">
+
+          <code><strong>tar -zxvf harp_training_2022_data.tgz</strong></code>
+        </pre>
+        The directory with your new <code>data</code> directory in it should be 
+        your root directory for the course. We will make use of the <code>here</code> 
+        package to read data from directories relative to this root directory.
+      </p>
     </div>
   </section>
    
