@@ -79,7 +79,35 @@
 
   <section id="intro">
     <div class="container mt-5">
-      <h2>Help info will be added here</h2>
+      <h2>Other packages you will need to follow the course</h2>
+      <ul>
+        <li>here: <code><span class="function">install.packages</span>(<span>"here"</span>)</code></li>
+        <li>doParallel: <code><span class="function">install.packages</span>(<span>"doParallel"</span>)</code></li>
+        <li>forcats: <code><span class="function">install.packages</span>(<span>"forcats"</span>)</code></li>
+        <li>scico: <code><span class="function">install.packages</span>(<span>"scico"</span>)</code></li>
+        <li>ncdf4: <code><span class="function">install.packages</span>(<span>"ncdf4"</span>)</code></li>
+        <li>Rgrib2: <code><span class="function">remotes::install_github</span>(<span class="string">"harphub/Rgrib2"</span>)</code></li>
+      </ul>
+      For <code>Rgrib2</code> you will need to have the <code>eccodes</code> system library installed (<code>libeccodes-dev</code>). 
+      If you're installation is in a non-standard location (i.e. not /usr or /usr/local) you need to set the environment variable 
+      <code>ECCODES_DIR</code> to the location of you eccodes installation. To find the location:
+      <pre class="code-block pt-4">
+        <code>locate libeccodes.so</code>
+      </pre>
+      And the path you need is the one above the <code>lib</code> dirctory. Then set the <code>ECCODES_DIR</code> environment variable 
+      before starting R and installing <code>Rgrib2</code>.
+      <pre class="code-block pt-4">
+        <code>export ECCODES_DIR=/path/to/eccodes</code>
+      </pre>
+      We also be using development versions of a couple of the <code>harp</code> packages since these contains features 
+      and changes that will be a part of harp soon after the course. So you need to install those to:
+      <pre class="code-block pt-4">
+        <code><span class="function">remotes::install_github</span>(<span class="string">"andrew-met/harpIO", "develop"</span>)</code></li>
+        <code><span class="function">remotes::install_github</span>(<span class="string">"andrew-met/harpVis", "gg_geofield"</span>)</code></li>
+      </pre>
+      <hr>
+      <h2>Slack</h2>
+      Youw ill be invited to a Slack Channel for the course during the lunch break on the first day
     </div>
   </section>
    
